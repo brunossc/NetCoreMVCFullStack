@@ -1,0 +1,21 @@
+﻿@page
+@model WebApplication1.Pages.CreateCustomerModel
+@{
+    ViewData["Title"] = "CreateCustomer";
+}
+
+<h2>CreateCustomer</h2>
+
+<p>Enter your name:</p>
+<form method="post">
+
+    <div>Name: <input asp-for="Customers.Name" /> </div>
+    <span asp-validation-for="Customers.Name"></span>
+
+    <p><input type="submit" name="Create" /></p>
+</form>
+
+@section Scripts 
+{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

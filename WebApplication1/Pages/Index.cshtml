@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model.Customers)
+            {
+                <tr>
+                    <td>@customer.Id</td>
+                    <td>@customer.Name</td>
+                    <td>
+                        <a asp-page="./EditCustomer" asp-route-id="@customer.Id">edit</a> |
+                        <button type="submit" asp-page-handler="Delete" asp-route-id="@customer.Id">delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <a asp-page="./CreateCustomer">Add new customer</a>
+</form>
+
+@section Scripts
+    {
+        <script>
+
+            var msg = '@Model.Message';
+            
+             
+            if (msg != '')
+            {
+                var decoded = $("<div/>").html(msg).text();
+                alert(decoded);
+            }
+            
+        </script>
+
+}
