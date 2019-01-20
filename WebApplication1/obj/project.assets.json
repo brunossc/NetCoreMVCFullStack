@@ -12426,11 +12426,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bruno\\Projetos\\DotNetCore\\MyAppWebVS\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Bruno\\Projetos\\DotNetCore\\GitHub\\brunossc\\NetCoreMVCFullStake\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Bruno\\Projetos\\DotNetCore\\MyAppWebVS\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Bruno\\Projetos\\DotNetCore\\GitHub\\brunossc\\NetCoreMVCFullStake\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\bcorreia\\.nuget\\packages\\",
-      "outputPath": "C:\\Bruno\\Projetos\\DotNetCore\\MyAppWebVS\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Bruno\\Projetos\\DotNetCore\\GitHub\\brunossc\\NetCoreMVCFullStake\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
