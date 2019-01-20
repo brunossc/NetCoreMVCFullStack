@@ -56,7 +56,6 @@ namespace WebApplication1
             loggerFactory.AddConsole();
             loggerFactory.AddDebug();
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
