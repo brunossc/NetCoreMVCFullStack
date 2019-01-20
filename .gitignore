@@ -6,3 +6,7 @@
 /.vs/WebApplication1/DesignTimeBuild
 /.vs/WebApplication1/v15/Server/sqlite3
 /WebApplication1/bin/Debug/netcoreapp2.1
+*.cache
+*.props
+*.targets
+/WebApplication1/obj
