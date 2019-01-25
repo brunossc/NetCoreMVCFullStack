@@ -28,7 +28,8 @@ namespace WebApplication1
         {
 
             services.AddLogging();
-            services.AddDbContext<AppDbInMemoryContext>(options => options.UseSqlServer("your StringConnection Here"));
+            // the stringConnection are in the file secret.json, see this link (https://blogs.msdn.microsoft.com/mihansen/2017/09/10/managing-secrets-in-net-core-2-0-apps/ for more information)
+            services.AddDbContext<AppDbInMemoryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionSQL")));
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
